@@ -1,0 +1,71 @@
+/*Main*/
+body{
+    margin: 2%;
+}
+footer{
+    margin: 2%;
+}
+
+/*Title*/
+.title{
+    text-align: center;
+}
+.title h1{
+    text-align: center;
+}
+.title img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid black 5px;
+    height: 20em;
+    width: auto;
+}
+
+/*About Me*/
+.aboutme{
+    background: lightgray;
+    border: solid black 5px;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.aboutme h2{
+    text-align: center;
+}
+
+/*Experience*/
+.experience{
+    background: lightgray;
+    border: solid black 5px;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.experience h2{
+    text-align: center;
+}
+.experience table,th,tr{
+    border: solid black 1px;
+}
+
+/*Horizaontal charts*/
+#horizontalrows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* all the inner sections */
+#horizontalrows > div {
+  background: lightgray;
+  border: 5px solid black;
+  padding: 2%;
+  flex: 1 1 250px;     
+}
+
+
