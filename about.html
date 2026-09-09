@@ -8,14 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
         body { font-family: 'Segoe UI', system-ui, sans-serif; color: #334155; }
-        .class-box {
+        .course-box {
             background-color: #ffffff;
-            border: 1px solid #e2e8f0;
+            border: none;
             border-left: 4px solid #0d6efd;
-            transition: transform 0.2s ease;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .class-box:hover {
-            transform: translateY(-3px);
+        .course-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+        .about-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
@@ -40,64 +49,70 @@
     </nav>
 
     <div class="container py-5">
-        <!-- Biography Box -->
-        <div class="card border-0 shadow-sm p-4 mb-5">
-            <h2 class="fw-bold mb-3"><i class="bi bi-person-badge text-primary me-2"></i>About Me</h2>
+        <!-- About Me Card -->
+        <div class="card about-card p-4 mb-5">
+            <h2 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                <i class="bi bi-person-badge-fill text-primary"></i> About Me
+            </h2>
             <p class="fs-5 text-secondary mb-0">
                 I am a Computer Science student in the Honors College at Virginia State University funded by the Trojan Presidential Scholarship and the Doyle Scholarship. My work focuses on building pragmatic software—from full-stack web platforms and C# desktop utilities to automated AI/LLM tools.
             </p>
         </div>
 
-        <!-- Coursework Section -->
-        <h3 class="fw-bold mb-4"><i class="bi bi-book text-primary me-2"></i>Completed Coursework</h3>
-        <div class="row g-3">
+        <!-- Coursework Title -->
+        <h3 class="fw-bold mb-4 d-flex align-items-center gap-2">
+            <i class="bi bi-book-fill text-primary"></i> Completed Coursework
+        </h3>
+
+        <!-- Course Cards Grid -->
+        <div class="row g-4">
             
             <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm p-3 class-box h-100">
+                <div class="card p-3 course-box h-100">
                     <h5 class="fw-bold text-dark mb-1">Data Structures & Algorithms</h5>
-                    <p class="small text-muted mb-0">Arrays, Linked Lists, Trees, Sorting, & Algorithmic Complexity</p>
+                    <p class="small text-secondary mb-0">Arrays, Linked Lists, Trees, Sorting, & Algorithmic Complexity</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm p-3 class-box h-100">
+                <div class="card p-3 course-box h-100">
                     <h5 class="fw-bold text-dark mb-1">Object-Oriented Programming</h5>
-                    <p class="small text-muted mb-0">Classes, Inheritance, Polymorphism, Abstraction, and C# / Java paradigms</p>
+                    <p class="small text-secondary mb-0">Classes, Inheritance, Polymorphism, Abstraction, and C# / Java paradigms</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm p-3 class-box h-100">
+                <div class="card p-3 course-box h-100">
                     <h5 class="fw-bold text-dark mb-1">Database Management Systems</h5>
-                    <p class="small text-muted mb-0">Relational Database Design, Normalization, Complex SQL, & PHP/MySQL</p>
+                    <p class="small text-secondary mb-0">Relational Database Design, Normalization, Complex SQL, & PHP/MySQL</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm p-3 class-box h-100">
+                <div class="card p-3 course-box h-100">
                     <h5 class="fw-bold text-dark mb-1">Software Engineering</h5>
-                    <p class="small text-muted mb-0">Agile methodologies, Git version control, testing, & technical documentation</p>
+                    <p class="small text-secondary mb-0">Agile methodologies, Git version control, testing, & technical documentation</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm p-3 class-box h-100">
+                <div class="card p-3 course-box h-100">
                     <h5 class="fw-bold text-dark mb-1">Web Application Development</h5>
-                    <p class="small text-muted mb-0">HTML5, CSS3, JavaScript, Bootstrap, Node.js, and Express.js APIs</p>
+                    <p class="small text-secondary mb-0">HTML5, CSS3, JavaScript, Bootstrap, Node.js, Express.js APIs</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card shadow-sm p-3 class-box h-100">
+                <div class="card p-3 course-box h-100">
                     <h5 class="fw-bold text-dark mb-1">Computer Organization</h5>
-                    <p class="small text-muted mb-0">System Architecture, Assembly Language, Memory Hierarchy, & Logic Gates</p>
+                    <p class="small text-secondary mb-0">System Architecture, Assembly Language, Memory Hierarchy, & Logic Gates</p>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <footer class="py-4 bg-dark text-center text-muted border-top border-secondary">
+    <footer class="py-4 bg-dark text-center text-muted border-top border-secondary mt-5">
         <div class="container">
             <p class="mb-0 small">&copy; 2026 Chasz Lacy. Built with Bootstrap 5.</p>
         </div>
